@@ -22,12 +22,12 @@
   margin: auto;
 }
 .header__input {
-  height: 35px;
-  width: 75%;
+  height: 50px;
+  width: 300px;
   display: flex;
   margin-right: 1rem;
-  border: 2px solid #E1E1E1;
-  border-radius: 0.3rem;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
 }
 .header__input-container {
   display: flex;

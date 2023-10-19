@@ -1,0 +1,33 @@
+.reviewer {
+    display: flex;
+
+
+    &__title{
+        color: #AFAFAF;
+        font-size: 0.8rem;
+
+    }
+
+    &__left {
+        margin: 3.5rem 0.5rem;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        padding: 1rem;
+    }
+
+    &__input-box {
+        
+
+        height: 100px;
+        width: 100%;
+        display: flex;
+        margin-right: 1rem;
+        border: 1px solid #E1E1E1;
+        border-radius: 4px;
+         
+    }
+}

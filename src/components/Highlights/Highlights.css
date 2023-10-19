@@ -1,0 +1,17 @@
+.highlights__title {
+  padding: 0.5rem 1rem;
+}
+.highlights__container {
+  display: flex;
+  padding: 1rem;
+  border-top: 2px solid #E1E1E1;
+  border-bottom: 2px solid #E1E1E1;
+  margin: 1rem;
+}
+.highlights__left {
+  width: 50%;
+}
+.highlights__details {
+  padding: 1rem;
+  line-height: 1.25;
+}/*# sourceMappingURL=Highlights.css.map */

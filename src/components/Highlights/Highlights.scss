@@ -1,0 +1,27 @@
+.highlights {
+
+    &__title {
+        padding: 0.5rem 1rem;
+    }
+
+
+    &__container {
+        display: flex;
+        padding: 1rem;
+        border-top: 2px solid #E1E1E1;
+        border-bottom: 2px solid #E1E1E1;
+        margin: 1rem;
+    }
+
+    &__left {
+        width: 50%;
+    }
+
+    &__details {
+        padding: 1rem;
+        line-height: 1.25;
+        
+    }
+
+
+}
