@@ -1,5 +1,6 @@
 import BrainFlixLogo from '../../assets/images/Logo/BrainFlix-logo.svg';
 import MohanMuruge from '../../assets/images/Mohan-muruge.jpg';
+import BlueBtn from '../BlueBtn/BlueBtn';
 import './Header.scss';
 
 function Header (){
@@ -10,7 +11,8 @@ function Header (){
         <input className="header__input" type="text" placeholder="Search" name="search" />
         <img className="img-mohanmuruge" src={MohanMuruge} alt="Mohan Muruge" />
       </div>
-      <button className="blue-btn">UPLOAD</button>
+      {/* <button className="blue-btn">UPLOAD</button> */}
+      <BlueBtn name="UPLOAD" />
     </header>
     )
   }

@@ -17,11 +17,25 @@
         width: 50%;
     }
 
+    &__right {
+        display: inline-block;
+      
+    }
+
     &__details {
         padding: 1rem;
         line-height: 1.25;
         
     }
 
+    &__views {
+        height: 2rem;
+        width: 2rem;
+    }
+
+
+}
+
+.views-icon {
 
 }

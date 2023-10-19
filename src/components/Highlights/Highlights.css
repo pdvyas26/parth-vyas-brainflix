@@ -11,7 +11,14 @@
 .highlights__left {
   width: 50%;
 }
+.highlights__right {
+  display: inline-block;
+}
 .highlights__details {
   padding: 1rem;
   line-height: 1.25;
+}
+.highlights__views {
+  height: 2rem;
+  width: 2rem;
 }/*# sourceMappingURL=Highlights.css.map */

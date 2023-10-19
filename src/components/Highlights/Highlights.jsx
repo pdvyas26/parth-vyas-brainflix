@@ -1,8 +1,10 @@
 import './Highlights.scss'
+import ViewsIcon from '../../assets/images/Icons/views.svg'
+import LikesIcon from '../../assets/images/Icons/likes.svg'
 
 function Highlights (){
     return (
-        <section className="highlights">
+      <section className="highlights">
         <h1 className="highlights__title">BMX Rampage: 2018 Highlights</h1>
         <div className="highlights__container">
           <div className="highlights__left">
@@ -10,14 +12,14 @@ function Highlights (){
             <h5>07/11/2021</h5>
           </div>
           <div className="highlights__right">
-            <h5> views logo here</h5>
-            <h5> likes logo here</h5>
+            <img src={ViewsIcon} /><p>no. of likes</p>
+            <img src={LikesIcon} /><p>no. of views</p>
           </div>
         </div>
         <p className="highlights__details">
           On a gusty day in Southern Utah, a group of 25 daring mountain bikers blew the doors off what is possible on two wheels, unleashing some of the biggest moments the sport has ever seen. While mother nature only allowed for one full run before the conditions made it impossible to ride, that was all that was needed for event veteran Kyle Strait, who won the event for the second time -- eight years after his first Red Cow Rampage title
         </p>
-    </section>
+      </section>
 
     )
 }
