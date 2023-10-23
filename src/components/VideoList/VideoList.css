@@ -1,0 +1,26 @@
+.video-list {
+  padding: 1rem;
+}
+.video-list__title {
+  font-size: 0.8rem;
+  width: 60%;
+  padding-left: 0.5rem;
+}
+.video-list__item-container {
+  display: flex;
+}
+.video-list__item {
+  list-style-type: none;
+}
+.video-list__img-container {
+  width: 40%;
+}
+.video-list__img {
+  width: 12rem;
+  height: 4.5rem;
+  width: 100%;
+  margin: 0 0.5rem 1rem 0;
+  border-radius: 0.2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=VideoList.css.map */

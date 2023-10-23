@@ -1,5 +1,5 @@
 import './BlueBtn.scss';
-import uploadIcon from '../../assets/images/Icons/upload.svg'
+import uploadIcon from '../../assets/images/Icons/upload.svg';
 
 
 

@@ -1,4 +1,7 @@
-
+* {
+    margin: 0;
+    padding: 0;
+}
 .img-mohanmuruge {
     width: 40px;
     height: 40px;
@@ -21,63 +24,78 @@
     }
 }
 
-.comments {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem;
-
-    &__wrapper {
-        display: flex;
-        border-top: 1px solid #E1E1E1;
-    }
-
-    &__pic {
-        height: 10px;
-        width: 30px;
-        background-color: #E1E1E1;
-        display: flex;
-        margin-top: 1rem;
-        border-radius:50%;
-        padding: 0.8rem;
-    }
-
-    &__container {
-        padding-left: 1rem;
-        flex-grow: 1;
-    }
-
-    &__top {
-        display: flex;
-        justify-content: space-between;
-    }
- 
-
-    &__name {
-        display: inline-block;
-        padding: 1rem 0;
-        font-size: 1rem;
-        font-weight: 600;
-        margin-block-end: 0;
-        margin-block-start: 0;
-    }
-
-    &__date {
-        display: inline-block;
-        padding: 1rem 0;
-        color:  #AFAFAF;
-        margin-block-end: 0;
-        margin-block-start: 0;
-    }
-
-    &__bottom {
-        font-size: 0.8rem;
-        
-    }
-
-}
 
 .highlights__details {
     padding: 1rem;
     line-height: 1.25;
 }
+
+.next-videos {
+    border-top: 1px solid #e1e1e1;
+    padding-top: 1rem;
+    margin: 1rem;
+    color: #AFAFAF;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+// .comments {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     padding: 1rem;
+    
+    //     &__wrapper {
+    //         display: flex;
+    //         border-top: 1px solid #E1E1E1;
+    //     }
+    
+    //     &__pic {
+    //         height: 10px;
+    //         width: 30px;
+    //         background-color: #E1E1E1;
+    //         display: flex;
+    //         margin-top: 1rem;
+    //         border-radius:50%;
+    //         padding: 0.8rem;
+    //     }
+    
+    //     &__container {
+    //         padding-left: 1rem;
+    //         flex-grow: 1;
+    //     }
+    
+    //     &__top {
+    //         display: flex;
+    //         justify-content: space-between;
+    //     }
+     
+    
+    //     &__name {
+    //         display: inline-block;
+    //         padding: 1rem 0;
+    //         font-size: 1rem;
+    //         font-weight: 600;
+    //         margin-block-end: 0;
+    //         margin-block-start: 0;
+    //     }
+    
+    //     &__date {
+    //         display: inline-block;
+    //         padding: 1rem 0;
+    //         color:  #AFAFAF;
+    //         margin-block-end: 0;
+    //         margin-block-start: 0;
+    //     }
+    
+    //     &__bottom {
+    //         font-size: 0.8rem;
+            
+    //     }
+    
+    // }
