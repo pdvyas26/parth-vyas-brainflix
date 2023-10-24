@@ -3,6 +3,17 @@
   flex-direction: column;
   padding: 1rem;
 }
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media (min-width: 1280px) {
+  .header {
+    padding-right: 4rem;
+  }
+}
 .header__logo {
   display: flex;
   justify-content: center;
@@ -10,18 +21,52 @@
   height: 25px;
   width: 120px;
 }
+@media (min-width: 768px) {
+  .header__logo {
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 1280px) {
+  .header__logo {
+    padding-left: 4rem;
+  }
+}
 .header__input {
   height: 40px;
-  width: 300px;
+  width: 200px;
   display: flex;
-  margin-right: 1rem;
   border: 1px solid #E1E1E1;
   border-radius: 4px;
-  padding-left: 0.5rem;
+  padding-left: 2rem;
+  margin-right: 1rem;
+  background-image: url(../../assets/images/Icons/search.svg);
+  background-repeat: no-repeat;
+  background-position: left;
 }
 .header__input-container {
   display: flex;
   justify-content: center;
   margin: 1rem auto;
-  width: 100%;
+}
+@media (min-width: 768px) {
+  .header__input-container {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .img-mohanmuruge {
+    display: none;
+  }
+}
+.img-mohanmuruge-tablet {
+  display: none;
+}
+@media (min-width: 768px) {
+  .img-mohanmuruge-tablet {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
 }/*# sourceMappingURL=Header.css.map */

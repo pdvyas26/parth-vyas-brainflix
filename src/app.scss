@@ -1,3 +1,5 @@
+@use './styles/partials/mixins' as *;
+
 * {
     margin: 0;
     padding: 0;
@@ -30,17 +32,40 @@
     line-height: 1.25;
 }
 
-.next-videos {
+
+
+
+
+.main {
+  @include desktop {
+    display: flex;
+  }
+
+  &__next-videos {
     border-top: 1px solid #e1e1e1;
     padding-top: 1rem;
     margin: 1rem;
     color: #AFAFAF;
     font-weight: 600;
+
+    @include desktop {
+      margin-right: 0;
+      border-top: 0;
+      padding-top:0;
+    }
 }
 
+  &__container {
 
+    @include desktop {
+      padding-left: 5rem;
+    }
+  }
 
-
+  &__video-list {
+    border-left: 1px solid #e1e1e1;
+  }
+}
 
 
 

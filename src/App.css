@@ -27,10 +27,30 @@
   line-height: 1.25;
 }
 
-.next-videos {
+@media (min-width: 1280px) {
+  .main {
+    display: flex;
+  }
+}
+.main__next-videos {
   border-top: 1px solid #e1e1e1;
   padding-top: 1rem;
   margin: 1rem;
   color: #AFAFAF;
   font-weight: 600;
+}
+@media (min-width: 1280px) {
+  .main__next-videos {
+    margin-right: 0;
+    border-top: 0;
+    padding-top: 0;
+  }
+}
+@media (min-width: 1280px) {
+  .main__container {
+    padding-left: 5rem;
+  }
+}
+.main__video-list {
+  border-left: 1px solid #e1e1e1;
 }/*# sourceMappingURL=app.css.map */

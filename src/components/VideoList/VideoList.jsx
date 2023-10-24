@@ -13,7 +13,10 @@ function VideoList(props) {
                 <div className="video-list__img-container">
                   <img src={video.image} alt="video image" className="video-list__img"/>
                 </div>
-                <h3 className="video-list__title">{video.title}</h3>
+                <div>
+                  <h3 className="video-list__title">{video.title}</h3>
+                  <p className="video-list__channel">{video.channel}</p>
+                </div>
               </div>
             </li>
           );

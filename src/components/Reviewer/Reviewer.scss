@@ -1,3 +1,5 @@
+@use '../../styles/partials/mixins' as *;
+
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +13,12 @@
     display: flex;
     margin: 0 1rem;
 
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
 
     &__title{
         color: #AFAFAF;
@@ -21,6 +29,13 @@
 
     &__left {
         margin: 2.5rem 0.5rem 3.5rem -1rem;
+        display: flex;
+
+        @include tablet {
+            margin: 1.2rem 1rem 0 1rem;
+            height: 40px;
+            width: 40px;
+        }
     }
 
     &__right {
@@ -28,6 +43,11 @@
         flex-direction: column;
         flex-grow: 1;
         padding: 1rem 0 1rem 0;
+
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 
     &__text-area {
@@ -41,6 +61,17 @@
         border-radius: 4px;
         padding: 1rem 0 0 1rem;
         color: #323232;
+
+        @include tablet {
+            height: 30px;
+            width: 420px;
+            padding: 0.6rem;
+            margin-top: 0.5rem;   
+        }
+
+        @include desktop {
+            width: 550px;
+        }
          
     }
 
@@ -51,6 +82,24 @@
         height: 50px;
         display: flex;
         align-items: center;
+
+        @include tablet {
+            width: 200px;
+            display: flex;
+            align-self: end;
+        }
+
+        &-icon {
+            display: flex;
+            width: 10%;
+            padding-left: 0.5rem;
+        }
+
+        &-comment {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+        }
 
     }
 }

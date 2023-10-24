@@ -2,21 +2,35 @@
   background-color: #0095FF;
   border: none;
   border-radius: 0.3rem;
-  display: flex;
-  justify-content: center;
   margin: 0.5rem auto;
-  padding: 0.5rem;
-  width: 290px;
+  width: 260px;
   height: 2rem;
   color: #FFFFFF;
-  height: 3how rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
-
-.upload-icon {
-  height: 30px;
-  width: 30px;
-  margin-bottom: 1rem;
-  position: absolute;
-  left: 20px;
-  top: 125px;
+@media (min-width: 768px) {
+  .blue-btn {
+    width: 200px;
+    margin-left: 0;
+    padding-right: 1rem;
+    margin-right: 1rem;
+  }
+}
+@media (min-width: 1280px) {
+  .blue-btn {
+    margin-right: 1rem;
+  }
+}
+.blue-btn__icon {
+  display: flex;
+  width: 20%;
+}
+.blue-btn__input {
+  width: 80%;
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=BlueBtn.css.map */

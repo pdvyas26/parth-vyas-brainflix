@@ -4,13 +4,20 @@ import LikesIcon from '../../assets/images/Icons/likes.svg'
 
 function SelectedVideo(props){
 
+  function displayTimestamp(timestamp){
+    let formattedTimestamp = new Date(timestamp).toLocaleDateString();
+    return formattedTimestamp;
+  }
+
     return (<section>
-      <video className = "video-player" src={props.video.video + '?api_key=test'} poster={props.video.image} controls></video>
+      <div className='video-wrapper'>
+        <video className = "video-player" src={props.video.video + '?api_key=test'} poster={props.video.image} controls></video>
+      </div>
       <h2 className = "video-player__title">{props.video.title}</h2>
       <div className = "highlights">
         <div className = "highlights__left">
             <h4 className="highlights__left-channel" >{props.video.channel}</h4>
-            <p className="highlights__left-date">{props.video.timestamp}</p>
+            <p className="highlights__left-date">{displayTimestamp(props.video.timestamp)}</p>
         </div>
         <div className = "highlights__right">
           <div className = "highlights__right-container">
