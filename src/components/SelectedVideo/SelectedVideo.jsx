@@ -9,7 +9,8 @@ function SelectedVideo(props){
     return formattedTimestamp;
   }
 
-    return (<section>
+    return (
+    <section>
       <div className='video-wrapper'>
         <video className = "video-player" src={props.video.video + '?api_key=test'} poster={props.video.image} controls></video>
       </div>
@@ -25,8 +26,8 @@ function SelectedVideo(props){
             <p>{props.video.views}</p>
           </div>
           <div className = "highlights__right-container">
-          <img className="highlights__right-icon" src={LikesIcon} alt="Likes Icon" />
-          <p>{props.video.likes}</p>
+            <img className="highlights__right-icon" src={LikesIcon} alt="Likes Icon" />
+            <p>{props.video.likes}</p>
           </div>
         </div>
       </div>
