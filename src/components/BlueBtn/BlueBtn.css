@@ -21,11 +21,6 @@
     margin-left: 0;
   }
 }
-@media (min-width: 1280px) {
-  .blue-btn {
-    margin-right: 1rem;
-  }
-}
 .blue-btn__icon {
   height: 35px;
   width: 35px;

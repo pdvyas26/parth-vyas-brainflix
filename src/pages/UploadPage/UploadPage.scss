@@ -18,6 +18,34 @@
     padding: 0 2.25rem;
   }
 
+  @include desktop {
+    padding: 0 4rem;
+  }
+
+  &__desktop-view {
+    @include desktop {
+      display: flex;
+      padding: 1rem;
+      justify-content: space-between;
+    }
+
+    &-left {
+      width: 40%;
+    }
+
+    &-right {
+      display: none;
+
+      @include desktop {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+      }
+
+    }
+  }
+
+
     &__title {
         border-top: 1px solid $Mercury;
         padding: 1rem;
@@ -27,6 +55,10 @@
         border-bottom: 1px solid $Mercury;
         margin-bottom: 1.5rem;
         padding: 1.5rem 0;
+      }
+
+      @include desktop {
+        padding: 3rem 0;
       }
 
        
@@ -51,6 +83,11 @@
         @include tablet {
             width: 50%;
         }
+
+        @include desktop {
+          width: 100%;
+        
+        }
      
 
         &-container {
@@ -58,6 +95,11 @@
 
             @include tablet {
               padding: 0;
+            }
+
+            @include desktop {
+              padding-right: 2rem;
+              padding-bottom: 1rem;
             }
 
 
@@ -77,6 +119,14 @@
 
     @include tablet {
       padding: 0;
+    }
+
+    &__container {
+    
+
+      @include desktop {
+        display: none;
+      }
     }
 
     &__title {
