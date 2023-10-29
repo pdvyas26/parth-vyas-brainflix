@@ -1,32 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .upload {
+    padding: 0 2.25rem;
+  }
+}
 .upload__title {
-  border-top: 1px solid #e1e1e1;
+  border-top: 1px solid #E1E1E1;
   padding: 1rem;
 }
+@media (min-width: 768px) {
+  .upload__title {
+    border-bottom: 1px solid #E1E1E1;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem 0;
+  }
+}
 .upload__heading {
-  color: grey;
+  color: #AFAFAF;
   padding-left: 1rem;
   font-weight: bold;
 }
+@media (min-width: 768px) {
+  .upload__heading {
+    padding-left: 0;
+  }
+}
 .upload__image {
   width: 100%;
-  height: 180px;
-  border-radius: 0.2rem;
+  height: auto;
+  border-radius: 0.3rem;
+  background-color: #E1E1E1;
+}
+@media (min-width: 768px) {
+  .upload__image {
+    width: 50%;
+  }
 }
 .upload__image-container {
   padding: 1rem;
-  border-radius: 5rem;
+}
+@media (min-width: 768px) {
+  .upload__image-container {
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  .upload__image-container {
+    padding-top: 0.5rem;
+  }
 }
 
 .form {
   padding: 0 1rem;
 }
+@media (min-width: 768px) {
+  .form {
+    padding: 0;
+  }
+}
 .form__title {
   padding: 0.5rem 0;
+  color: #AFAFAF;
+  font-weight: 700;
 }
 .form__input {
   width: 100%;
-  padding: 1rem 0;
+  padding: 1rem 0.5rem;
+  border: 2px solid #E1E1E1;
+  border-radius: 0.3rem;
 }
 .form__description {
   width: 100%;
+  border: 2px solid #E1E1E1;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+.form__description-title {
+  padding-top: 1.5rem;
+  color: #AFAFAF;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+  .form__btn-container {
+    border-top: 1px solid #E1E1E1;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1rem;
+  }
+}
+.form__publish-btn {
+  width: 290px;
+  margin-top: 1rem;
+  padding: 1rem 0;
+}
+@media (min-width: 768px) {
+  .form__publish-btn {
+    order: 1;
+    width: 160px;
+  }
+}
+.form__cancel-btn {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  color: #0095FF;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .form__cancel-btn {
+    order: -1;
+    padding-right: 3rem;
+  }
 }/*# sourceMappingURL=UploadPage.css.map */

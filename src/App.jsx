@@ -3,6 +3,8 @@ import HomePage from "./pages/HomePage/HomePage";
 import UploadPage from "./pages/UploadPage/UploadPage";
 import Header from "./components/Header/Header";
 import "./app.scss"
+import VideoList from "./components/VideoList/VideoList";
+import SelectedVideo from "./components/SelectedVideo/SelectedVideo";
 
 
 function App (){
@@ -12,6 +14,7 @@ function App (){
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/uploadpage" element={<UploadPage/>} />
+        <Route path="/:id" element={<HomePage />} />
       </Routes>
     </BrowserRouter>
   )

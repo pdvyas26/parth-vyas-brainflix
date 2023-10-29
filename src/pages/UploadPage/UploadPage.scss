@@ -1,26 +1,70 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+  
+}
+
+
 .upload {
 
+
+  @include tablet {
+
+    padding: 0 2.25rem;
+  }
+
     &__title {
-        border-top: 1px solid #e1e1e1;
+        border-top: 1px solid $Mercury;
         padding: 1rem;
+
+
+      @include tablet {
+        border-bottom: 1px solid $Mercury;
+        margin-bottom: 1.5rem;
+        padding: 1.5rem 0;
+      }
+
        
     }
 
     &__heading {
-        color: grey;
+        color: $Silver;
         padding-left: 1rem;
         font-weight: bold;
+
+        @include tablet {
+          padding-left: 0;
+        }
     }
 
     &__image {
         width: 100%;
-        height: 180px;
-        border-radius: 0.2rem;
+        height: auto;
+        border-radius: 0.3rem;
+        background-color: $Mercury;
+
+        @include tablet {
+            width: 50%;
+        }
      
 
         &-container {
             padding: 1rem;
-            border-radius:5rem;
+
+            @include tablet {
+              padding: 0;
+            }
+
+
+        @include tablet {
+          padding-top: 0.5rem;
+        }
+          
         }
 
     }
@@ -31,20 +75,75 @@
 .form {
     padding: 0 1rem;
 
+    @include tablet {
+      padding: 0;
+    }
+
     &__title {
         padding: 0.5rem 0;
+        color: $Silver;
+        font-weight: 700;
     }
 
     &__input {
         width: 100%;
-        padding: 1rem 0;
+        padding: 1rem 0.5rem;
+        border: 2px solid $Mercury;
+        border-radius: 0.3rem;
     }
 
     &__description {
         width: 100%;
+        border: 2px solid $Mercury;
+        border-radius: 0.3rem;
+        padding: 0.5rem;
+
+        
+       
 
         &-title {
+            padding-top: 1.5rem;
+            color: $Silver;
+            font-weight: 700;
+            padding-bottom: 0.5rem;
 
         }
+    }
+
+    &__btn-container {
+        
+        @include tablet {
+            border-top: 1px solid $Mercury;
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 1rem;
+        }
+    }
+
+    &__publish-btn {
+       width: 290px;
+       margin-top: 1rem;
+       padding: 1rem 0;
+       
+       @include tablet {
+        order: 1;
+        width: 160px;
+       
+       }
+    }
+
+    &__cancel-btn {
+      display: flex;
+      justify-content: center;
+      padding: 2rem 0;
+      color: $BrainFlix-Blue;
+      font-weight: 700;
+      
+
+      @include tablet {
+        order: -1;
+        padding-right: 3rem;
+      }
     }
 }

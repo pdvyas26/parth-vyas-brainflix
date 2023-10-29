@@ -3,6 +3,7 @@ import BrainFlixLogo from '../../assets/images/Logo/BrainFlix-logo.svg';
 import MohanMuruge from '../../assets/images/Mohan-muruge.jpg';
 import BlueBtn from '../BlueBtn/BlueBtn';
 import './Header.scss';
+import UploadIcon from '../../assets/images/Icons/upload.svg'
 
 
 function Header (){
@@ -13,7 +14,9 @@ function Header (){
         <input className="header__input" type="text" placeholder="Search" name="search" />
         <img className="img-mohanmuruge" src={MohanMuruge} alt="Mohan Muruge" /> 
       </div>
-      <Link to="/uploadpage"><BlueBtn name="UPLOAD" /></Link>
+      <Link className="header__link" to="/uploadpage">
+        <BlueBtn className="header__btn" image={UploadIcon} name="UPLOAD" />
+      </Link>
       <img className="img-mohanmuruge-tablet" src={MohanMuruge} alt="Mohan Muruge" /> 
     </header>
     )

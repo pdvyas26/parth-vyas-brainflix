@@ -9,7 +9,7 @@ function Comments(props){
 
     return (
       <ul>
-  {props.video.comments.map((comment, index)=>{
+  {props.video.comments?.map((comment, index)=>{
   return (
     <li className="comments" key={index}>
       <div className="comments__wrapper">

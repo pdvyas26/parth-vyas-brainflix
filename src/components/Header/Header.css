@@ -1,3 +1,11 @@
+::-moz-placeholder {
+  color: #323232;
+}
+
+::placeholder {
+  color: #323232;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -7,6 +15,8 @@
   .header {
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2.25rem;
   }
 }
 @media (min-width: 1280px) {
@@ -24,6 +34,7 @@
 @media (min-width: 768px) {
   .header__logo {
     margin-left: 1rem;
+    margin-right: 4rem;
   }
 }
 @media (min-width: 1280px) {
@@ -32,25 +43,43 @@
   }
 }
 .header__input {
-  height: 40px;
-  width: 200px;
+  height: 3rem;
+  width: 232px;
   display: flex;
   border: 1px solid #E1E1E1;
+  color: #000000;
   border-radius: 4px;
-  padding-left: 2rem;
+  padding-left: 2.5rem;
   margin-right: 1rem;
   background-image: url(../../assets/images/Icons/search.svg);
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: 10px;
+}
+@media (min-width: 768px) {
+  .header__input {
+    margin-right: 0;
+  }
 }
 .header__input-container {
   display: flex;
   justify-content: center;
-  margin: 1rem auto;
+  padding: 1rem 0;
 }
 @media (min-width: 768px) {
   .header__input-container {
     margin-right: 0;
+  }
+}
+.header__link {
+  text-decoration: none;
+}
+.header__btn {
+  width: 300px;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .header__btn {
+    width: 160px;
   }
 }
 
