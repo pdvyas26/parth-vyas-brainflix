@@ -7,17 +7,6 @@ function  VideoList(props) {
 
   console.log(props);
 
-// const apiKey = "d1007b1d-c54d-4781-80cb-cc1ff5db11be";
-// const [videosData, setVideosData] = useState([]);
-// const [selectedVideo, setSelectedVideo] = useState({});
-
-// useEffect (()=> {
-//   const getVideos = async () => {
-//     const response = await axios.get(`https://project-2-api.herokuapp.com/videos?api_key=${apiKey}`); 
-//     setVideosData(response.data);
-//   }
-//   getVideos ();
-// }, []);
 
   return (
     <ul className="video-list">
@@ -43,7 +32,17 @@ export default VideoList;
 
 
 
+// const apiKey = "d1007b1d-c54d-4781-80cb-cc1ff5db11be";
+// const [videosData, setVideosData] = useState([]);
+// const [selectedVideo, setSelectedVideo] = useState({});
 
+// useEffect (()=> {
+//   const getVideos = async () => {
+//     const response = await axios.get(`https://project-2-api.herokuapp.com/videos?api_key=${apiKey}`); 
+//     setVideosData(response.data);
+//   }
+//   getVideos ();
+// }, []);
 
 
 

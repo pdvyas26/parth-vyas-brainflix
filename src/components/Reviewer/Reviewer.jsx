@@ -15,11 +15,8 @@ function Reviewer(){
             <textarea className="reviewer__text-area" type="text" placeholder="Add a new comment" 
             name="comment"></textarea>
           </div>
-          <div>
-            <BlueBtn className="reviewer__btn" name="COMMENT" image={CommentIcon}  />
-          </div>
+          <BlueBtn className="reviewer__btn" name="COMMENT" image={CommentIcon}  />
         </div>
-
       </div>
     </>
   );
@@ -31,7 +28,6 @@ export default Reviewer;
 
 
 
-<button className="blue-btn reviewer__btn">
-<img className="reviewer__btn-icon" src={CommentIcon} alt="comment icon" />
-<p className="reviewer__btn-comment">COMMENT</p>
-</button>
+
+
+ 

@@ -3,6 +3,7 @@
 
   .video-list {
     padding: 1rem;
+    max-width: 320px;
 
     @include tablet {
         width: 18rem;
