@@ -6,6 +6,8 @@
     padding: 0;
 }
 
+
+
 .section-heading {
     margin: 1.5rem 0 0 1rem;
 
@@ -39,11 +41,12 @@
     &__left {
         margin: 2.5rem 0.5rem 3.5rem -1rem;
         display: flex;
-
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    
         @include tablet {
             margin: 0 1rem 0 1rem;
-            height: 40px;
-            width: 40px;
         }
     }
 

@@ -13,6 +13,7 @@
     justify-content: center;
   }
 }
+
 .video-player {
   height: 180px;
   width: 100%;
@@ -100,7 +101,7 @@
 }
 .highlights__right-icon {
   padding-right: 1rem;
-  width: 20px;
+  width: 35px;
 }
 .highlights__description {
   padding: 0 1rem;

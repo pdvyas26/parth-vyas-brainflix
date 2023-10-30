@@ -8,7 +8,7 @@ function Reviewer(){
     <>
       <h3 className="section-heading">3 Comments</h3>
       <div className="reviewer">
-        <img className="img-mohanmuruge reviewer__left" src={MohanMuruge} alt="Mohan Muruge" />
+        <img className="reviewer__left" src={MohanMuruge} alt="Mohan Muruge" />
         <div className="reviewer__right">
           <div>
             <h3 className="reviewer__title">JOIN THE CONVERSATION</h3>
