@@ -12,16 +12,26 @@ function Reviewer(){
         <div className="reviewer__right">
           <div>
             <h3 className="reviewer__title">JOIN THE CONVERSATION</h3>
-            <textarea className="reviewer__text-area" type="text" placeholder="Add a new comment" name="comment"></textarea>
+            <textarea className="reviewer__text-area" type="text" placeholder="Add a new comment" 
+            name="comment"></textarea>
           </div>
-            <button className="blue-btn reviewer__btn">
-              <img className="reviewer__btn-icon" src={CommentIcon} alt="comment icon" />
-              <p className="reviewer__btn-comment">COMMENT</p>
-            </button>
+          <div>
+            <BlueBtn className="reviewer__btn" name="COMMENT" image={CommentIcon}  />
           </div>
+        </div>
+
       </div>
     </>
   );
 };
 
 export default Reviewer;
+
+
+
+
+
+<button className="blue-btn reviewer__btn">
+<img className="reviewer__btn-icon" src={CommentIcon} alt="comment icon" />
+<p className="reviewer__btn-comment">COMMENT</p>
+</button>

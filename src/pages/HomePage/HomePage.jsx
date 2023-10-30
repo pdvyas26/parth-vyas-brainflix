@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import SelectedVideo from '../../components/SelectedVideo/SelectedVideo';
-// import videoData from '../../data/video-details.json';
+import SelectedVideo from '../../components/SelectedVideo/SelectedVideo'
 import Comments from '../../components/Comments/Comments'
 import Reviewer from '../../components/Reviewer/Reviewer'
 import VideoList from "../../components/VideoList/VideoList";
@@ -31,35 +30,7 @@ useEffect (()=> {
   getVideos ();
 }, []);
 
-// useEffect (()=> {
-//   async function fetchVideo() {
-//     if (!params.id) {
-//       // if there is no params.id set the selectedVideo to the default first element of recipes array
-//       //  1) get all recipes
-//       //  2) get selected video using the first element of the videos data (response.data[0].id)
 
-//       const response = await axios.get(
-//         `https://project-2-api.herokuapp.com/videos?api_key=${apiKey}`
-//       ); //
-
-//       const selectedResponse = await axios.get(
-//         `https://project-2-api.herokuapp.com/videos/${response.data[0].id}?api_key=${apiKey}`
-//       );
-//       // console.log(selectedResponse.data);
-//       setSelectedVideo(selectedResponse.data);
-//     } else {
-//       // else if there is a params.id use it to get the selectedRecipe
-//       const selectedResponse = await axios.get(
-//         `https://project-2-api.herokuapp.com/videos/${params.id}?api_key=${apiKey}`
-//       );
-//       // console.log(selectedResponse.data);
-//       setSelectedVideo(selectedResponse.data);
-//     }
-//   }
-
-//   // Call the fetchRecipe() function
-//   fetchVideo();
-// }, [params.id]);
 
 useEffect(() => {
   async function fetchVideo() {
@@ -110,7 +81,35 @@ export default HomePage;
 
 
 
+// useEffect (()=> {
+//   async function fetchVideo() {
+//     if (!params.id) {
+//       // if there is no params.id set the selectedVideo to the default first element of recipes array
+//       //  1) get all recipes
+//       //  2) get selected video using the first element of the videos data (response.data[0].id)
 
+//       const response = await axios.get(
+//         `https://project-2-api.herokuapp.com/videos?api_key=${apiKey}`
+//       ); //
+
+//       const selectedResponse = await axios.get(
+//         `https://project-2-api.herokuapp.com/videos/${response.data[0].id}?api_key=${apiKey}`
+//       );
+//       // console.log(selectedResponse.data);
+//       setSelectedVideo(selectedResponse.data);
+//     } else {
+//       // else if there is a params.id use it to get the selectedRecipe
+//       const selectedResponse = await axios.get(
+//         `https://project-2-api.herokuapp.com/videos/${params.id}?api_key=${apiKey}`
+//       );
+//       // console.log(selectedResponse.data);
+//       setSelectedVideo(selectedResponse.data);
+//     }
+//   }
+
+//   // Call the fetchRecipe() function
+//   fetchVideo();
+// }, [params.id]);
 
 
 
