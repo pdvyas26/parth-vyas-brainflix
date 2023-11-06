@@ -1,4 +1,5 @@
 @use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
 
 
   .video-list {
@@ -7,6 +8,12 @@
 
     @include tablet {
         width: 18rem;
+    }
+
+    @include desktop {
+        position: relative;
+        top: -13rem;
+        border-left: 1px solid $Mercury;
     }
 
   

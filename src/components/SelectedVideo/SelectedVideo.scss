@@ -15,6 +15,7 @@
         display: flex;
         justify-content: center;
     }
+
 }
 
 .video-player {
@@ -58,6 +59,19 @@
         padding: 0 2.25rem;
         margin: 1.5rem 0;
     }
+
+    
+
+    &-wrapper {
+        @include desktop {
+        width: 77.5%;
+        padding-left: 5rem;
+       
+       
+        }
+        
+    }
+
 
     &__left {
         width: 50%;
@@ -117,5 +131,11 @@
         @include tablet {
             padding: 0 2.25rem;
         }
+
+        // @include desktop {
+        //     width: 75%;
+        //     padding-right: 0;
+        //     margin-right: 0;
+        // }
     }
 }

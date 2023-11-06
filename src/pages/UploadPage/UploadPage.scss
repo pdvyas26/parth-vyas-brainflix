@@ -30,7 +30,11 @@
     }
 
     &-left {
-      width: 40%;
+      width: 100%;
+
+      @include tablet {
+        width: 100%;
+      }
     }
 
     &-right {
@@ -132,7 +136,7 @@
     &__title {
         padding: 0.5rem 0;
         color: $Silver;
-        font-weight: 700;
+        font-weight: 600;
     }
 
     &__input {
@@ -140,6 +144,7 @@
         padding: 1rem 0.5rem;
         border: 2px solid $Mercury;
         border-radius: 0.3rem;
+        background-color: $Alabaster;
     }
 
     &__description {
@@ -147,6 +152,7 @@
         border: 2px solid $Mercury;
         border-radius: 0.3rem;
         padding: 0.5rem;
+        background-color: $Alabaster;
 
         
        

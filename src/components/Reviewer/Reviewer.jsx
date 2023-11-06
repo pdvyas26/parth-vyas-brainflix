@@ -3,10 +3,12 @@ import MohanMuruge from '../../assets/images/Mohan-muruge.jpg';
 import CommentIcon from '../../assets/images/Icons/add_comment.svg'
 import BlueBtn from '../BlueBtn/BlueBtn'
 
-function Reviewer(){
+function Reviewer({commentsLength}){
+
+
   return (
     <>
-      <h3 className="section-heading">3 Comments</h3>
+      <h3 className="section-heading">{commentsLength.length} Comments</h3>
       <div className="reviewer">
         <img className="reviewer__left" src={MohanMuruge} alt="Mohan Muruge" />
         <div className="reviewer__right">

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import SelectedVideo from '../../components/SelectedVideo/SelectedVideo'
 import Comments from '../../components/Comments/Comments'
 import Reviewer from '../../components/Reviewer/Reviewer'
@@ -10,19 +10,16 @@ import '../HomePage/HomePage.scss'
 function HomePage() {
   const params = useParams();
 
-const apiKey = "d1007b1d-c54d-4781-80cb-cc1ff5db11be";
 const [videosData, setVideosData] = useState([]);
 const [selectedVideo, setSelectedVideo] = useState({});
 
-
 useEffect (()=> {
   const getVideos = async () => {
-    const response = await axios.get(`https://project-2-api.herokuapp.com/videos?api_key=${apiKey}`); 
+    const response = await axios.get(`${process.env.REACT_APP_API_URL}/videos`);  
     setVideosData(response.data);
   }
   getVideos ();
 }, []);
-
 
 
 useEffect(() => {
@@ -34,11 +31,11 @@ useEffect(() => {
 
     if (videoId) {
       const selectedResponse = await axios.get(
-        `https://project-2-api.herokuapp.com/videos/${videoId}?api_key=${apiKey}`
+        `${process.env.REACT_APP_API_URL}/videos/${videoId}`
       );
       setSelectedVideo(selectedResponse.data);
-    }
-  }
+    };
+  };
 
   fetchVideo();
 }, [params.id, videosData]);
@@ -46,20 +43,17 @@ useEffect(() => {
 
   return (
     <>
-    
-    <SelectedVideo video={selectedVideo} />
-    <div className="main">
-      <div className="main__container">
-        <Reviewer />
-        <Comments video={selectedVideo}/>
+      <SelectedVideo video={selectedVideo} />
+      <div className="main">
+        <div className="main__container">
+          <Reviewer commentsLength={selectedVideo.comments || []}  />
+          <Comments video={selectedVideo}/>
+        </div>
+        <div className="main__video-list">
+          <h3 className="main__next-videos">Next Videos</h3>
+          <VideoList videosData={videosData} selectedVideo={selectedVideo} />
+        </div>
       </div>
-      <div className="main__video-list">
-        <h3 className="main__next-videos">Next Videos</h3>
-        <VideoList videosData={videosData} selectedVideo={selectedVideo} />
-      </div>
-    </div>
-
-      
     </>
   );
 };

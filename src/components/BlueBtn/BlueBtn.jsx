@@ -1,7 +1,4 @@
 import './BlueBtn.scss';
-import uploadIcon from '../../assets/images/Icons/upload.svg';
-
-
 
 function BlueBtn (props){
     return (
@@ -13,5 +10,4 @@ function BlueBtn (props){
         </div>
     )
 }
-
 export default BlueBtn;
